@@ -20,7 +20,7 @@ namespace laba2.net
             //quadrangle.printQuadrangle();
             Quadrangles quadrangles = new Quadrangles(20);
             quadrangles.printQuadrangles();
-            Console.WriteLine($"Average perimetr: {String.Format("{0:0.00}", quadrangles.findAveragePerimetr())}");
+            Console.WriteLine($"Average area: {String.Format("{0:0.00}", quadrangles.findAverageArea())}");
         }
 
     }
