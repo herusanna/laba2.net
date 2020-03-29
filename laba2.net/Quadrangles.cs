@@ -30,11 +30,11 @@ namespace laba2.net
             foreach (Quadrangle quadrangle in Quadran)
             {
                 //Console.WriteLine(i++ + ": " + quadrangle.side);
-                Console.WriteLine($"{i++} Perimetr: {String.Format("{0:0.00}", quadrangle.getPerimetr())}");
+                Console.WriteLine($"{i++} Area: {String.Format("{0:0.00}", quadrangle.getArea())}");
             }
             Console.WriteLine();
         }
-        public double findAveragePerimetr()
+        public double findAverageArea()
         {
             double average = 0;
             double sum = 0;
@@ -42,7 +42,7 @@ namespace laba2.net
             {
                 for (int i = 0; i < Quadran.Length; i++)
                 {
-                    sum += Quadran[i].getPerimetr();
+                    sum += Quadran[i].getArea();
                 }
                 average = sum / Quadran.Length;
             }
